@@ -24,5 +24,9 @@ Containers leaves in **container repository**
 * Containers are in the form of layer of image
 * It has a base image mostly **Linux Base Image**
 * **Application image** on top of the base image(For ex: postgres,mongodb...)
+## Docker Image Vs Docker Container
+### Docker Image
+* **actual package** which includes application package together with configuration and dependencies
+* **artifacts**, that can be moved around
 
  
