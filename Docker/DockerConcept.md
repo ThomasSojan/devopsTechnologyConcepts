@@ -30,5 +30,9 @@ Containers leaves in **container repository**
 * **artifacts**, that can be moved around
 ### Docker Container
 * containers are docker image in **running state**
+## Docker Vs Virtual Machine
+
+* Docker virtualize application layer of an OS
+* VM virtualizes both application layer and kernel of an OS
 
  
