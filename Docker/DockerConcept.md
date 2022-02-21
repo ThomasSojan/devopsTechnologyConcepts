@@ -7,5 +7,14 @@
 ## Where do containers leave?
 Containers leaves in **container repository**
 * Public repository(DockerHub)
-* Private repository(for orgsnizations)
-
+* Private repository(for orgnizations)
+## Before container
+* **Installation process different** on each OS environment
+* **Many steps** in deployment can cause something could go wrong (Setting up of new environment is tedious)
+## After container 
+* Application and services are in it's own **isolated environment**
+* Packaged with all needed configuration 
+* Inside a container there are application,configuration and start scripts
+* One command to install the application
+* Run same app with 2 different version without conflict
+ 
