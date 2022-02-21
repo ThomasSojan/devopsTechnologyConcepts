@@ -11,10 +11,18 @@ Containers leaves in **container repository**
 ## Before container
 * **Installation process different** on each OS environment
 * **Many steps** in deployment can cause something could go wrong (Setting up of new environment is tedious)
+* There are chances for getting **dependency conflict**
 ## After container 
 * Application and services are in it's own **isolated environment**
 * Packaged with all needed configuration 
 * Inside a container there are application,configuration and start scripts
 * One command to install the application
 * Run same app with 2 different version without conflict
+* No **environmental configuration** needed on server
+
+## Container structure
+* Containers are in the form of layer of image
+* It has a base image mostly **Linux Base Image**
+* **Application image** on top of the base image(For ex: postgres,mongodb...)
+
  
