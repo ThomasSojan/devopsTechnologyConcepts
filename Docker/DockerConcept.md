@@ -36,6 +36,6 @@ Containers leaves in **container repository**
 * VM virtualizes both application layer and kernel of an OS
 * Docker containers are small (megabytes) but VMs are large
 * Docker containers start and run much fast
-* VM can run on any host
+* VM can run on any host but docker containers are dependent on the kernel of host machine(for ex: windows and mac cannot run docker natively)
 
  
