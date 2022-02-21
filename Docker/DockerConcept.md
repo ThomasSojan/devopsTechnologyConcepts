@@ -28,5 +28,7 @@ Containers leaves in **container repository**
 ### Docker Image
 * **actual package** which includes application package together with configuration and dependencies
 * **artifacts**, that can be moved around
+### Docker Container
+* containers are docker image in **running state**
 
  
