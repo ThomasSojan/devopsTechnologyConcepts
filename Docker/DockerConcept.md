@@ -29,10 +29,13 @@ Containers leaves in **container repository**
 * **actual package** which includes application package together with configuration and dependencies
 * **artifacts**, that can be moved around
 ### Docker Container
-* containers are docker image in **running state**
+* Containers are docker image in **running state**
 ## Docker Vs Virtual Machine
 
 * Docker virtualize application layer of an OS
 * VM virtualizes both application layer and kernel of an OS
+* Docker containers are small (megabytes) but VMs are large
+* Docker containers start and run much fast
+* VM can run on any host
 
  
