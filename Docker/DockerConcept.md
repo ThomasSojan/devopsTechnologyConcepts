@@ -37,6 +37,6 @@ Containers leaves in **container repository**
 * Docker containers are small (megabytes) but VMs are large
 * Docker containers start and run much fast
 * VM can run on any host but docker containers are dependent on the kernel of host machine
-(for ex: windows and mac cannot run docker natively)
+(for ex: windows and mac dosen't support docker natively)
 
  
