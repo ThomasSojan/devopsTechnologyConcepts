@@ -44,8 +44,5 @@ Containers leaves in **container repository**
 * if two containers listen to same port of the host machine, **conflict** occurs
 * To avoid conflict we need to set up **Port binding**
 * Ex:host port 6000 bind to container port 6379 
- ```
- docker run -p6000:6379 <image-name>
- 
-  ```
+ ```docker run -p6000:6379 <image-name>```
  
