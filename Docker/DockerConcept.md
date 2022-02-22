@@ -39,4 +39,13 @@ Containers leaves in **container repository**
 * VM can run on any host but docker containers are dependent on the kernel of host machine
 (for ex: windows and mac dosen't support docker natively)
 
+## Container Port Vs Host Port
+* Our host machines has some set of ports similarly cotainers have the same too
+* if two containers listen to same port of the host machine, **conflict** occurs
+* To avoid conflict we need to set up **Port binding**
+* Ex:host port 6000 bind to container port 6379 
+ ```
+ docker run -p6000:6379 <image-name>
+ 
+  ```
  
