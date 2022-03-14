@@ -12,6 +12,11 @@
 * Also known as **distributed event log** where all the records are immutable and appended to the end of the log
 * Messages are **persisted** on disk for certain period of time known as **retention-policy**. This makes kafka **hybrid** between messaging system and database
 * The main concept behand kafka are **producers**(publishers) producing messages to specific **topics** and **consumers**(recievers) consuming those messages and maintaining the position in the stream of data
-* 
 
+## Kafka Architecture
+* Architecture consist of **cluster**, **producers** and **consumers**
+* Single kafka server within the cluster are brokers. The **broker** is responsible for reciving messages from producers, assigining offsets and commiting messages to disk
+* Also responsible for responding to consumers fetch requests and serving messages
+* When messages are send to a particular broker they are send to a particular topic. **Topics** provide a way to categorize data that is been send and they can be further broken down into number of partitions
+* For example a system can have seperate topics for processing user and processing metric datas.
 
