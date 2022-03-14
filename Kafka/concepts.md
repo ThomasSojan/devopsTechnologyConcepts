@@ -14,6 +14,7 @@
 * The main concept behand kafka are **producers**(publishers) producing messages to specific **topics** and **consumers**(recievers) consuming those messages and maintaining the position in the stream of data
 
 ## Kafka Architecture
+![Kafka Architecture](https://github.com/ThomasSojan/devopsTechnologyConcepts/blob/main/Kafka/kafkaArch.png)
 * Architecture consist of **cluster**, **producers** and **consumers**
 * Single kafka server within the cluster are brokers. The **broker** is responsible for reciving messages from producers, assigining offsets and commiting messages to disk
 * Also responsible for responding to consumers fetch requests and serving messages
