@@ -10,7 +10,8 @@
 ## Kafka
 * Opensource pub/sub **messaging system**
 * Also known as **distributed event log** where all the records are immutable and appended to the end of the log
-* Messages are **persisted** on disk for certain period of time known as **retention-policy** makes kafka **hybrid** between messaging system and database
+* Messages are **persisted** on disk for certain period of time known as **retention-policy**. This makes kafka **hybrid** between messaging system and database
+* The main concept behand kafka are **producers**(publishers) producing messages to specific **topics** and **consumers**(recievers) consuming those messages and maintaining the position in the stream of data
 * 
-* 
+
 
