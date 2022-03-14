@@ -17,6 +17,7 @@
 * Architecture consist of **cluster**, **producers** and **consumers**
 * Single kafka server within the cluster are brokers. The **broker** is responsible for reciving messages from producers, assigining offsets and commiting messages to disk
 * Also responsible for responding to consumers fetch requests and serving messages
-* When messages are send to a particular broker they are send to a particular topic. **Topics** provide a way to categorize data that is been send and they can be further broken down into number of partitions
-* For example a system can have seperate topics for processing user and processing metric datas.
+* When messages are send to a particular broker they are send to a particular topic. **Topics** provide a way to categorize data that is been send and they can be further broken down into number of **partitions**
+* For example a system can have seperate topics for processing user and processing metric. Each partitions acts as a separate commit log and order of messages guaranteed only across the same partition
+* Being able to split a topic to multiple partition makes scaling easy as each partition can be read by a separate consumers this allows for achieving high throughput as both partitions and consumers can be split across multiple servers
 
