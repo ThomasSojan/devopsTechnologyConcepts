@@ -1,5 +1,9 @@
 # Refactoring
 The process of changing a software system in such a way that it does not alter the external behavior of the code, yet improves its internal structure
+## Need for Refactoring
+* Requirement change
+* Design needs to be improved
+* Remove laziness of code
 ## Practical tips
 * Buffer time for refactoring every sprint
 * Do not refactor very close to release
