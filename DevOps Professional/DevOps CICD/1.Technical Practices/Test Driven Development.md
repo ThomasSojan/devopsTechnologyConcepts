@@ -15,7 +15,12 @@ Is a software engineering approach that involves short development iterations co
 **5.** Run test to pass<br>
 **6.** Refactor the code and tests<br>
 
-**XUnit** frameworks help in writing automated unit tests. Thus TDD includes both test automation and refactoring.
+**XUnit** frameworks help in writing automated unit tests. Thus TDD includes both **test automation** and **refactoring**.
+
+## Practical tips:
+* TDD takes 1.5 times more time than normal development, however helps in reduction of defects and produces good quality code
+* May start with few modules and do pair programming with a tester and programmer
+* Automated unit test cases help in implementing TDD
 
 
 
