@@ -47,3 +47,21 @@ Can check the source code for -
 * SQUALE rating for technical debt
 
 6.Quality gates can be applied to ensure that code that does not pass the quality conditions do not move forward to the next stage. 
+
+## Calculation of technical debt:
+
+**Technical debt = Total rework effort in minutes / Total original effort**<br>
+**OR**<br>
+**(rework effort in mins/LOC * 30) * 100**
+
+Let us understand the formula<br>
+
+Total rework effort in minutes:<br>
+
+* Each rule is associated with rework effort. If the rule is violated it adds to the rework effort.
+
+Total original effort:<br>
+
+* The original number of lines of code is multiplied with original effort. Sonar considers the original effort as 30 minutes for each line of code to flow through the entire SDLC 
+
+The equation provides a percentage which is graded from A to E as a SQUALE rating. D and E indicates that code quality is very bad. A and B indicates good quality and C indicates deterioration of code
