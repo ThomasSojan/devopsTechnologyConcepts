@@ -1,3 +1,9 @@
+## Tools
+* Jenkins
+* TeamCity
+* Bamboo
+* GitLab
+
 ## Jenkins workflow
 
 1. A build script containing the various targets for executing the build cycle activities is available(pl. refer earlier section on build automation)
