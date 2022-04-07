@@ -61,3 +61,13 @@ Some of the build tools that are widely used in industry are:
 * war:war - This goal is responsible to create a .war (Web Archive) file
 
 * deploy- This goal is responsible to deploy the .war file at pre-defined server.
+
+## Practical tips
+
+* Build every time a change is checked in
+
+
+* Ensure that the steps of static/dynamic analysis, unit testing, code coverage etc are also included
+
+
+* If the build is broken, the development team needs to fix it immediately
