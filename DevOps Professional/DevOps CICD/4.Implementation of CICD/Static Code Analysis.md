@@ -65,3 +65,13 @@ Total original effort:<br>
 * The original number of lines of code is multiplied with original effort. Sonar considers the original effort as 30 minutes for each line of code to flow through the entire SDLC 
 
 The equation provides a percentage which is graded from A to E as a SQUALE rating. D and E indicates that code quality is very bad. A and B indicates good quality and C indicates deterioration of code
+
+## Practical tips
+
+* Create profiles with increasing number of rules so that teams are not overwhelmed with too many rules in the beginning
+
+* A mix of tools can be used to check quality
+
+* It is important for the teams to fix issues at the earliest and improve the quality
+
+* Issues can be resolved based on priority. Here is a snapshot of the categories available in sonarqube
