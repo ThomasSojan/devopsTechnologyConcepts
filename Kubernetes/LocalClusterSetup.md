@@ -1,0 +1,44 @@
+# Set up locak K8s cluster
+
+### 1) Download and install Minikube:
+```
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+```
+
+### 2) Install KVM2 driver
+```
+yum install qemu-kvm libvirt libvirt-python libguestfs-tools virt-install
+```
+
+Start the libvirtd service:<br>
+```
+systemctl start libvirtd.service
+```
+Stop the libvirtd service:
+```
+systemctl stop libvirtd.service
+```
+Make the libvirtd service start at boot-time:
+```
+systemctl enable libvirtd.service
+```
+Prevent the libvirtd service from starting at boot-time:
+
+```
+systemctl disable libvirtd.service
+```
+
+
+### 3) Add user to libvirt user group
+```
+sudo usermod -aG libvirt $USER
+```
+### 4) Start cluster using kvm2 driver
+```
+Start a cluster using the kvm2 driver:
+```
+To make kvm2 the default driver:
+```
+minikube config set driver kvm2
+```
