@@ -18,6 +18,15 @@
 
 ### Configmaps and Secrets
 
+-> **Configmaps** provide external configuration to our application<br>
+-> For example we can specify db endpoints and other configurations can be attached to the application pod<br>
+-> **Secrets** are used to store secret data<br>
+-> Datas are not stored in encrypted format<br>
+-> For example we can store creds and certificates for an application in secrets<br>
+
+
+
+
 
 
 
