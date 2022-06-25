@@ -9,12 +9,13 @@
 -> New Ip address created on recreation<br>
 
 
-### Service
+### Services
 -> Permanent IP address that can be attached to a pod<br>
 -> lifecycle of service and pods are not connected<br>
 -> **External Service** is a service that is open public<br>
 -> **Internal Service** is a service that can't expose to public like database service<br>
 -> **Ingress** is a component that give domain name to service<br>
+-> Service acts like a **loadbalancer** when same application pods or replicas are connected to same service 
 
 ### Configmaps and Secrets
 
@@ -23,6 +24,38 @@
 -> **Secrets** are used to store secret data<br>
 -> Datas are not stored in encrypted format<br>
 -> For example we can store creds and certificates for an application in secrets<br>
+
+### Volumes
+
+-> When a pod get restarted data will be lost<br>
+-> In order to persist data we use **volumes**<br>
+-> It could be storage on local machine(node),remote storage outside K8s cluster<br>
+
+### Replicas
+
+-> Replicas are same replica for a particular application pod<br>
+-> It is used to ensure availabilty of application<br>
+-> Replica of an application will connect to a common service<br>
+-> Service acts like loadbalancer that control traffic to replicas<br>
+-> In Openshift point of view we can say **replicasets**<br>
+
+### Deployments
+
+-> abstration of pods<br>
+-> Blueprint of an application pods<br>
+-> Replicas can be scaled up and down using depployments and service can also configured<br>
+-> In practice we will work on deployments rather than working on pods<br>
+
+### Statefulsets
+-> Meant specifically for statefull apps (for ex: MySQL,Mogodb,Elasticsearch...)<br>
+-> We can't replicate database deloyment and the reason for that is database has it state which is its data<br>
+-> If we have replicas of database it will access same shared data storage and we need to have the mechanism that manages which pods are currently is writing to that storage and which one reading from it inorder **to avoid data inconsistency**<br>
+
+
+
+
+
+
 
 
 
